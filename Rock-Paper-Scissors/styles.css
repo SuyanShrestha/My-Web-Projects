@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Gajraj+One&family=Montserrat:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    text-align: center;
+    font-family: 'Montserrat', sans-serif; 
+
+}
+
+h1{
+    /* background-color: #081b31; */
+    color: #fff;
+    height: 5rem;
+    line-height: 5rem;
+
+    /* font-family: 'Montserrat', sans-serif;  */
+}
+
+.choice{
+    height: 12.5rem;
+    width: 12.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    height: 12rem;
+    width: 12rem;
+    border-radius: 50%;
+}
+
+.choices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin: 5rem;
+    /* transition: all 1s; */
+}
+
+.choice{
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all 0.5s;
+    /* animation: choiceMove 2s linear infinte; */
+}
+
+.choice:hover{
+    background: linear-gradient(90deg, #0F2027, #203A43, #2C5364);
+    scale: 1.1;
+}
+
+/* @keyframes choiceMove{
+    0%{
+        transform: translateY(0rem);
+    };
+    50%{
+        transform: translateY(-5rem);
+    };
+} */
+
+body{
+    background: url(images/bg-img.jpg);
+    overflow: hidden;
+}
+
+.gradient{
+    background: linear-gradient(0deg, #ffffff 0%,#595959 73%);
+    height: 100vh;
+    width: 100vw;
+    opacity: 0.5;
+    position: absolute;
+    z-index: -1;
+}
+
+.score-board{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    gap: 5rem;
+}
+
+#user-score,
+#computer-score{
+    font-size: 7rem;
+    -webkit-text-stroke-color: #ffffff;
+    -webkit-text-stroke-width: 1px;
+    color: black;
+}
+
+.msg-container{
+    margin-top: 4rem;
+}
+
+#msg{
+    display: inline;
+    background: linear-gradient(90deg, #0F2027, #203A43, #2C5364);
+    color: #fff;
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: 3rem;
+    
+}
+
+h1{
+    font-size: 4rem;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 1rem;
+}
+
+.who{
+    -webkit-text-stroke-color: #333333;
+    -webkit-text-stroke-width: 2px;
+    color: black;
+}
+
+.wrpsa{
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+}
+
+.suyan-logo{
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    border-radius: 2rem;
+    opacity: 0.8;
+    width: 13rem;
+    height: 10rem;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    cursor: pointer;
+}
+
+.nav-links img{
+    border-radius: 0;
+    width: 20rem;
+    height: 4.5rem;
+}
+
+.nav-links{
+    position: relative;
+    bottom: 5rem;
+    /* left : -3rem; */
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    transition: 1s;
+}
+
+.nav-links a:nth-child(1),
+.nav-links a:nth-child(2),
+.nav-links a:nth-child(3){
+    position: absolute;
+    left: -3rem;
+    transition: all 0.5s;
+}
+
+.nav-links a:nth-child(1){
+    bottom: 15rem;
+}
+
+.nav-links a:nth-child(2){
+    bottom: 9rem;
+}
+.nav-links a:nth-child(3){
+    bottom: 3rem;
+}
+
+
+.nav-links a:nth-child(1):hover,
+.nav-links a:nth-child(2):hover,
+.nav-links a:nth-child(3):hover{
+    left: 0rem;
+}
+
+
+.refresh{
+    width: 12rem;
+    height: 4rem;
+    border-radius: 2rem;
+    font-size: 2rem;
+    position: absolute;
+    right: 3rem;
+    bottom: 10rem;
+}
+
+.details{
+    height: 20rem;
+    width: 15rem;
+    border: 1px solid black;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-bottom-left-radius: 2rem;
+    border-top-left-radius: 2rem;
+}
+
+.details{
+    /* filter: blur(1rem); */
+    backdrop-filter: blur(3px);
+    background: linear-gradient(135deg, rgba(255,255,255,0.2), rgba(255,255,255,0.2));
+    /* filter: blur(10px); */
+    border: 1px solid rgba(255,255,255,0.18);
+    box-shadow: 0 8px 32px 0 rgba(255,255,255,0.15);
+}
+
+.details{
+    top: 10rem;
+    right: -14rem;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.details:hover{
+    right: 0;
+    /* top: 6rem; */
+}
+
+.gojo{
+    border-radius: 50%;
+    width: 8rem;
+    height: 8rem;
+    margin: 1rem;
+    object-fit: cover;
+}
+
+.details>.nameCard{
+    font-size: 1.5rem;
+}
+
+.details>p{
+    margin: 0.5rem;
+}
+
+@media screen and (max-width: 1000px){
+    .wrpsa{
+        visibility: hidden;
+        opacity: 0;
+    }
+    .suyan-logo{
+        visibility: hidden;
+        opacity: 0;
+    }
+    .nav-links{
+        visibility: hidden;
+        opacity: 0;
+    }
+    .refresh{
+        bottom: 1rem;
+        right: 1rem;
+    }
+    
+}
