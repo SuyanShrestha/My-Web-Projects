@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>jsday20 - TIC TAC TOE</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<h1>Tic Tac Toe</h1>
+
+	<div class="msg-container hide">
+		<p id="msg">Winner</p>
+		<button id="new-btn">New Game</button>
+	</div>
+	
+	<div class="container">
+		<div class="game">
+			<button class="box"></button>
+			<button class="box"></button>
+			<button class="box"></button>
+			<button class="box"></button>
+			<button class="box"></button>
+			<button class="box"></button>
+			<button class="box"></button>
+			<button class="box"></button>
+			<button class="box"></button>
+		</div>
+	</div>
+
+	<div class="score-board">
+		<h3 class="score-title">Scoreboard</h3>
+		<div class="board">
+			<p class="who">Player-O</p>
+			<p>&#8594;</p>
+			<p id="o-score">0</p>
+		</div>
+		<div class="board">
+			<p class="who">Player-X</p>
+			<p>&#8594;</p>
+			<p id="x-score">0</p>
+		</div>
+	</div>
+
+<!-- 
+	<div class="score">
+		<div class="scoreX">Player X <span id="#score1">0</span> </div>
+		<div class="scoreO">Player O <span id="#score2">0</span> </div>
+	</div> -->
+
+	<button id="reset-btn">Reset</button>
+	<button id="comp-btn">Play vs AI</button>
+
+	<script src="scripts.js"></script>
+</body>
+</html>

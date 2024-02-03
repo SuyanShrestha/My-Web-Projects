@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>HeheCalculator</title>
+		<link rel="stylesheet" href="styles2.css">
+		<script src="myscripts2.js"></script>
+	</head>
+
+	<body>
+		<div class="calculator">
+			<div class="signature">suyanfx-112EX</div>
+			<div class="row">
+				<input class="txtbox" type="text" id="result">
+			</div>
+			<div class="row">
+				<button class="button" onclick="Solve('7')">7</button>
+				<button class="button" onclick="Solve('8')">8</button>
+				<button class="button" onclick="Solve('9')">9</button>
+				<button class="button sym" onclick="Solve('+')">+</button>
+			</div>
+			<div class="row">
+				<button class="button" onclick="Solve('4')">4</button>
+				<button class="button" onclick="Solve('5')">5</button>
+				<button class="button" onclick="Solve('6')">6</button>
+				<button class="button sym" onclick="Solve('-')">-</button>
+			</div>
+			<div class="row">
+				<button class="button" onclick="Solve('1')">1</button>
+				<button class="button" onclick="Solve('2')">2</button>
+				<button class="button" onclick="Solve('3')">3</button>
+				<button class="button sym" onclick="Solve('*')">x</button>
+			</div>
+			<div class="row">
+				<button class="button sym" onclick="Solve('.')">.</button>
+				<button class="button" onclick="Solve('0')">0</button>
+				<button class="button sym" onclick="Result()">=</button>
+				<button class="button sym" onclick="Solve('/')">/</button>
+			</div>
+			<div class="row">
+				<button class="button" onclick="Allclear()">AC</button>
+				<button class="button" style="width: 21rem;" onclick="Erase()">DEL</button>
+			</div>
+		</div>
+	</body>
+
+
+</html>

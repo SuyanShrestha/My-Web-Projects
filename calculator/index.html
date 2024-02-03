@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>HeheCalculator</title>
+		<link rel="stylesheet" href="styles.css">
+		<script src="myscripts.js"></script>
+	</head>
+
+	<body>
+		<table class="calculator">
+			<tr> 
+				<td colspan="4"><input type="text" id="result"> </td>
+			</tr> 
+			<tr> 
+				<td><input type="button" value="7" onclick= "Solve('7')"></td> 
+				<td><input type="button" value="8" onclick= "Solve('8')"></td> 
+				<td><input type="button" value="9" onclick= "Solve('9')" ></td> 
+				<td><input type="button" value="+" onclick= "Solve('+')"></td> 
+			</tr>
+			<tr> 
+				<td><input type="button" value="4" onclick= "Solve('4')"></td> 
+				<td><input type="button" value="5" onclick= "Solve('5')"></td> 
+				<td><input type="button" value="6" onclick= "Solve('6')"></td> 
+				<td><input type="button" value="-" onclick= "Solve('-')"></td> 
+			</tr>
+			<tr> 
+				<td><input type="button" value="1" onclick= "Solve('1')"></td> 
+				<td><input type="button" value="2" onclick= "Solve('2')"></td> 
+				<td><input type="button" value="3" onclick= "Solve('3')"></td> 
+				<td><input type="button" value="x" onclick= "Solve('*')"></td> 
+			</tr>
+			<tr> 
+				<td><input type="button" value="C" onclick= "Clear()" style="background-color: violet; color: white;"></td> 
+				<td><input type="button" value="0" onclick= "Solve('0')"></td> 
+				<td><input type="button" value="=" onclick= "Result()"></td> 
+				<td><input type="button" value="/" onclick= "Solve('/')"></td> 
+			</tr>
+	</body>
+
+
+</html>

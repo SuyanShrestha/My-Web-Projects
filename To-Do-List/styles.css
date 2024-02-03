@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+
+:root {
+    --bcg-color: goldenrod;
+    --box-1: rgba(50, 50, 93, 0.25);
+    --box-2: rgba(0, 0, 0, 0.3);
+    --box-3: rgba(10, 37, 64, 0.35);
+    --text-1: rgba(255, 255, 255, 1);
+    --text-2: rgba(0, 0, 0, 0.15);
+
+    --bcg-todo: antiquewhite;
+    --plusbcg-hover: green;
+    --pluscolor-hover: white;
+}
+
+.dark-theme {
+    --bcg-color: #1a1a1a;
+    --box-1: rgba(255, 255, 255, 0.25);
+    --box-2: rgba(255, 255, 255, 0.3);
+    --box-3: rgba(255, 248, 255, 0.35);
+    --text-1: rgba(255, 255, 255, 1);
+    --text-2: rgba(0, 0, 0, 0.15);
+
+    --bcg-todo: wheat;
+    --plusbcg-hover: black;
+    --pluscolor-hover: white;
+
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--bcg-color);
+    font-family: 'Poppins', sans-serif;
+    padding: 10px;
+}
+
+.todo{
+    width: 100%;
+    max-width: 40rem;
+    background: var(--bcg-todo);
+    border-radius: 1rem;
+    padding: 2.5rem 2rem 5rem 2rem;
+    margin: 8rem auto;
+
+    box-shadow: var(--box-1) 0px 50px 100px -20px, var(--box-2) 0px 30px 60px -30px, var(--box-3) 0px -2px 6px 0px inset;
+}
+
+.todo h1{
+    color: #1a1a1a;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+        text-shadow: 2px 2px 0px var(--text-1),
+        5px 4px 0px var(--text-2);
+}
+
+.todo h1 img{
+    width: 3.5rem;
+    margin-left: 1rem;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fffff4;
+    /* padding: 0 0.5rem; */
+    border-radius: 0.5rem 2rem 2rem 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.row input{
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 0.8rem;
+    font-size: 1rem;
+    /* font-weight: 600; */
+}
+
+button{
+    border: none;
+    outline: none;
+    padding: 0.5rem 3rem;
+    border-radius: 2rem;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+button:hover{
+    background: var(--plusbcg-hover);
+    color: var(--pluscolor-hover);
+}
+
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 0.5rem 12px 3rem;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before{
+    content: '';
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background-image: url('/images/unchecked.png');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    /* top: 0.8rem; */
+    left: 0;
+    top: 0.6rem;
+}
+
+ul li.checked{
+    color: #655967;
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    background-image: url(images/checked.png);
+}
+
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 0.1rem;
+    font-size: 1.75rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    /* background: aqua; */
+    line-height: 2.5rem;
+    border-radius: 50%;
+    text-align: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #655967;
+    transition: all 0.5s;
+}
+
+ul li span:hover{
+    background: var(--plusbcg-hover);
+    /* color: #1a1a1a; */
+    color: var(--pluscolor-hover);
+}
+
+.container nav img{
+    position: absolute;
+    right: 2rem;
+    width: 3rem;
+}
+
+#icon{
+    cursor: pointer;
+}

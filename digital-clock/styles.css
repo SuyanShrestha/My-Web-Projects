@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, .time, .left-side, .right-side,
+.right-top, .right-down{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+body{
+    min-height: 80vh;
+    background-color: #2e2e45;
+}
+
+
+.container, .time, .right-side,
+.right-top,
+.right-down{
+    position: relative;
+}
+
+.container{
+    color: #fff;
+    background: #2d2f38;
+    width: 30rem;
+    padding: 1.25rem 3.5rem;
+    box-shadow: 0 5px 25px rgba(14, 21, 37, 0.8);
+    border-radius: 1rem;
+}
+
+#hours{
+    font-weight: 400;
+    padding: 0 1rem;
+    font-size: 8rem;
+    /* width: 14rem; */
+
+    background: -webkit-linear-gradient(90deg, black, white);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.right-side{
+    flex-direction: column;
+}
+
+#dots{
+    font-size: 4rem;
+    transform: translateY(-3px);
+    color: lightslategray;
+}
+
+#mins{
+    font-size: 4rem;
+    font-weight: 300;
+    transform: translateY(-0.3rem);
+    margin-left: 1rem;
+
+    background: -webkit-linear-gradient(90deg, black, orange, brown);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.right-down{
+    margin-left: 10px;
+    transform: translateY(-20px);
+}
+
+#period, #second{
+    font-size: 2rem;
+    font-weight: 300;
+    margin-left: 1rem;
+}
+
+#second{
+    width: 3rem;
+    background: -webkit-linear-gradient(90deg, black, orange, brown);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+}
+
+#period{
+    color:goldenrod;
+
+    background: -webkit-linear-gradient(90deg, black, orange, brown);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+}
+
+.container2{
+    /* opacity: 0.2; */
+    transform: rotateY(180deg)rotateZ(180deg);
+    /* filter: invert();     */
+    /* position: relative; */
+    /* box-shadow: none; */
+    /* background: transparent; */
+    position: relative;
+}
+
+
+/* .container2>.gradient{
+    position: absolute;
+    /* height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0; 
+    inset: 0;
+    border-radius: inherit;
+    background: linear-gradient(to top, #2e2e45a7 10%, #2e2e45);
+    transform: rotate(180deg);
+} */
+
+.container {
+    margin-top: 6vh;
+    /* transform: translateY(-12rem); */
+    -webkit-box-reflect: below 0px linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9
+    ));
+    
+}
+/* 
+.container2{
+    margin-top: 0;
+    box-shadow: none;
+    background: none;
+    -webkit-box-reflect: right;
+} */

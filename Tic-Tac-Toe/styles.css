@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+}
+
+body{
+    background: #6B654B;
+    text-align: center;
+}
+
+h1{
+    font-size: 4rem;
+    font-family: 'Montserrat', sans-serrif;
+    margin-top: 2.5rem;    
+}
+
+.container{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game{
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+
+.box{
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.1);
+    font-size: 8vmin;
+    color: #30321C;
+    background-color: #ffffc7;
+}
+
+#reset-btn,
+#new-btn,
+#comp-btn{
+    padding: 1rem;
+    font-size: 1.05rem;
+    background-color: #12100E;
+    color: white;
+    border-radius: 1rem;
+    border: none;
+    width: 8rem;
+}
+
+p{
+    color: #ffffc7;
+    font-size: 5vmin;
+    margin-right: 1rem;
+    width: 15rem;
+}
+
+.msg-container{
+    position: absolute;
+    height: 80vmin;
+    right: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide{
+    display: none;
+}
+
+#reset-btn,
+#new-btn,
+#comp-btn{
+    transition: all 0.4s;
+    cursor: pointer;
+}
+
+#reset-btn:hover,
+#new-btn:hover,
+#comp-btn:hover{
+    scale: 1.2;
+}
+
+.score{
+    position: absolute;
+    color: #ffffc7;
+    display: flex;
+    gap: 5rem;
+    font-size: 3rem;
+    margin-left: 3rem;
+    height: 100vh;
+    align-items: center;
+    top: 0;
+}
+
+.scoreX,
+.scoreO{
+    display: flex;
+    flex-direction: column;
+
+}
+/* 
+.msg-container{
+    height: 100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+} */
+
+.score-board{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 8rem;
+    gap: 1.25rem;
+    
+    font-family: 'Montserrat';
+}
+
+
+.board>p{
+    display: inline;
+    margin: 0;
+    font-size: 2rem;
+}
+
+.score-title{
+    font-size: 2.5rem;
+    position: absolute;
+    top: -5rem;
+    left: -0.75rem;
+}
+
+/* #o-score,
+#x-score{
+    position: absolute;
+    left: 7rem;
+} */
+
+@media  screen and (max-width: 1300px) {
+    .score-board{
+        left: 5rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .score-board {
+        left: 2rem;
+    }
+}

@@ -1,0 +1,64 @@
+.calculator{
+	border: 0.2rem solid black;
+	background-color: #4CAF50;
+	height: 44rem;
+	width: 31rem;
+	margin: auto;
+	padding: 1.25rem;
+	border-radius: 2.5rem;
+}
+
+.row{
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.txtbox{
+	padding: 20px 30px; 
+	width: 24.75rem;
+	height: 11rem;
+	font-size: 4.5rem; 
+	font-weight: bold; 
+	border: none; 
+	border-radius: 1.25rem; 
+	border: 2px solid black; 
+	margin: 0 0 2rem 0;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.button{
+	transition-duration: 0.4s;
+	background-color: white;
+	color: black;
+	width: 7rem;
+	height: 5rem;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 1.5rem;
+}
+
+.button:hover{
+	background-color: #4CAF50; 
+  	color: white;
+	border-radius: 1rem;
+}
+
+.button:active {
+	background-color: #3e8e41;
+	box-shadow: 0 5px #666;
+	transform: translateY(1rem);
+}
+
+.sym{
+	font-weight: bolder;
+}
+
+.signature{
+	font-style: italic;
+	text-align: right;
+	color: rgb(244, 242, 242);
+	padding: 0 1rem 1rem 0;
+	font-family: 'Comic Sans MS', fantasy;
+}
